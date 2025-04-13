@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SDG 2: Zero Hunger</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+
+    body {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    .glow-on-hover:hover {
+      box-shadow: 0 0 15px 5px rgba(255, 165, 0, 0.6);
+      transition: 0.3s ease-in-out;
+    }
+
+    .bounce {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .section-bg {
+      background: linear-gradient(135deg, #ffedb9, #ffb347);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-yellow-100 to-orange-200 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-yellow-400 text-white shadow-lg py-6 px-8 flex justify-between items-center">
+    <h1 class="text-3xl font-bold tracking-wide bounce">🌾 SDG Goal 2: Zero Hunger</h1>
+    <nav class="space-x-6 text-lg font-semibold">
+      <a href="#" onclick="openModal('home')" class="hover:underline">Home</a>
+      <a href="#" onclick="openModal('about')" class="hover:underline">About</a>
+      <a href="#" onclick="openModal('initiatives')" class="hover:underline">Initiatives</a>
+      <a href="#" onclick="openModal('get-involved')" class="hover:underline">Get Involved</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6 section-bg text-white">
+    <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Together, We Can End Hunger</h2>
+    <p class="text-xl max-w-2xl mx-auto mb-8">SDG 2 aims to ensure access to safe, nutritious, and sufficient food for all — especially the most vulnerable.</p>
+    <button onclick="openModal('learn')" class="bg-white text-orange-600 font-bold py-3 px-6 rounded-full shadow-lg glow-on-hover">Learn More</button>
+  </section>
+
+  <!-- Key Stats -->
+  <section class="grid md:grid-cols-3 gap-8 py-16 px-10 bg-white text-center">
+    <div class="bg-orange-100 p-8 rounded-2xl shadow-md hover:scale-105 transition">
+      <h3 class="text-4xl font-bold text-orange-600 mb-2">828M+</h3>
+      <p class="text-lg font-medium">People go to bed hungry every night</p>
+    </div>
+    <div class="bg-yellow-200 p-8 rounded-2xl shadow-md hover:scale-105 transition">
+      <h3 class="text-4xl font-bold text-yellow-700 mb-2">45M</h3>
+      <p class="text-lg font-medium">Children under 5 suffer from wasting</p>
+    </div>
+    <div class="bg-orange-300 p-8 rounded-2xl shadow-md hover:scale-105 transition">
+      <h3 class="text-4xl font-bold text-white mb-2">#2</h3>
+      <p class="text-lg font-medium text-white">Zero Hunger is the second global goal by the UN</p>
+    </div>
+  </section>
+
+  <!-- Actions Section -->
+  <section class="py-20 px-6 bg-yellow-100 text-center">
+    <h2 class="text-4xl font-bold mb-6 text-orange-700">How You Can Help</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition glow-on-hover">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Donate</h3>
+        <p class="mb-4">Support food banks and global hunger relief organizations.</p>
+        <button onclick="openModal('donate')" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-orange-600 transition">Donate</button>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition glow-on-hover">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Volunteer</h3>
+        <p class="mb-4">Help grow, cook, or distribute food in your community.</p>
+        <button onclick="openModal('volunteer')" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-orange-600 transition">Volunteer</button>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transition glow-on-hover">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Educate</h3>
+        <p class="mb-4">Spread awareness about food security and sustainable agriculture.</p>
+        <button onclick="openModal('educate')" class="bg-orange-500 text-white font-bold py-2 px-4 rounded-full hover:bg-orange-600 transition">Educate</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section class="py-20 px-6 bg-white text-center">
+    <h2 class="text-4xl font-bold mb-10 text-orange-700">Solutions to Achieve Zero Hunger</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-yellow-100 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300">
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="w-20 mx-auto mb-4 animate-bounce" alt="Sustainable Agriculture">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Sustainable Agriculture</h3>
+        <p>Support smallholder farmers and promote eco-friendly farming techniques to increase yields and preserve the environment.</p>
+      </div>
+      <div class="bg-yellow-200 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300">
+        <img src="https://cdn-icons-png.flaticon.com/512/3771/3771400.png" class="w-20 mx-auto mb-4 animate-pulse" alt="Food Waste Reduction">
+        <h3 class="text-xl font-semibold text-orange-600 mb-2">Reduce Food Waste</h3>
+        <p>Minimize food loss during production and consumption by improving storage, transport, and consumer awareness.</p>
+      </div>
+      <div class="bg-yellow-300 p-6 rounded-2xl shadow-md hover:scale-105 transition duration-300">
+        <img src="https://cdn-icons-png.flaticon.com/512/4221/4221361.png" class="w-20 mx-auto mb-4 animate-bounce" alt="Access to Markets">
+        <h3 class="text-xl font-semibold text-white mb-2">Access to Markets</h3>
+        <p class="text-white">Improve infrastructure and technology to connect farmers with markets and boost their income and food access.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Your Impact Section -->
+  <section class="py-16 px-6 bg-orange-50 text-center">
+    <h2 class="text-3xl font-bold mb-6 text-orange-700">What Have You Done?</h2>
+    <p class="mb-6 text-lg">Share your actions, big or small, in the fight against hunger 🌍</p>
+    <button onclick="openImpactModal()" class="bg-orange-500 text-white font-bold py-3 px-6 rounded-full hover:bg-orange-600 transition">Share Your Impact</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-400 text-white py-6 text-center">
+    <p>&copy; 2025 Zero Hunger Initiative By Class 10-E | Powered by Passion & Purpose 🌍</p>
+  </footer>
+
+  <!-- MODAL Structure -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-2xl shadow-xl max-w-md p-6 text-center relative">
+      <h2 id="modal-title" class="text-2xl font-bold mb-4 text-orange-600"></h2>
+      <p id="modal-message" class="mb-6 text-gray-700"></p>
+      <button onclick="closeModal()" class="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">Close</button>
+    </div>
+  </div>
+
+  <!-- Impact Modal -->
+  <div id="impactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-2xl shadow-xl max-w-xl w-full p-6 text-center relative">
+      <h2 class="text-2xl font-bold mb-4 text-orange-600">Share Your Impact</h2>
+      <textarea id="impactInput" rows="5" class="w-full p-4 border border-orange-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Tell us how you are helping achieve Zero Hunger..."></textarea>
+      <button onclick="submitImpact()" class="bg-orange-500 text-white font-bold px-6 py-2 rounded-full hover:bg-orange-600 transition">Submit</button>
+      <button onclick="closeImpactModal()" class="block mt-4 text-orange-600 hover:underline">Cancel</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const modal = document.getElementById('modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalMessage = document.getElementById('modal-message');
+
+    function openModal(type) {
+      const content = {
+        learn: {
+          title: "Learn More",
+          message: "SDG Goal 2 focuses on ending hunger, achieving food security, improving nutrition, and promoting sustainable agriculture."
+        },
+        donate: {
+          title: "Donate",
+          message: "Your donations help food banks and hunger relief organizations reach the most vulnerable communities around the world."
+        },
+        volunteer: {
+          title: "Volunteer",
+          message: "Join local efforts to grow, prepare, or distribute food and be part of the movement to end hunger."
+        },
+        educate: {
+          title: "Educate",
+          message: "Share information and raise awareness about sustainable food practices and the importance of food security."
+        },
+        home: {
+          title: "Welcome Home!",
+          message: "This is your hub for everything SDG Goal 2. Let's fight hunger together!"
+        },
+        about: {
+          title: "About SDG 2",
+          message: "Zero Hunger is one of the 17 Sustainable Development Goals set by the United Nations to be achieved by 2030."
+        },
+        initiatives: {
+          title: "Current Initiatives",
+          message: "Explore programs and partnerships working to combat global hunger through innovation and compassion."
+        },
+        "get-involved": {
+          title: "Get Involved",
+          message: "Find out how you can participate in local and global hunger-fighting efforts!"
+        }
+      };
+
+      const selected = content[type];
+      if (selected) {
+        modalTitle.innerText = selected.title;
+        modalMessage.innerText = selected.message;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function openImpactModal() {
+      document.getElementById('impactModal').classList.remove('hidden');
+      document.getElementById('impactModal').classList.add('flex');
+    }
+
+    function closeImpactModal() {
+      document.getElementById('impactModal').classList.add('hidden');
+      document.getElementById('impactModal').classList.remove('flex');
+    }
+
+    function submitImpact() {
+      const message = document.getElementById('impactInput').value.trim();
+      if (message) {
+        alert("Thank you for sharing! Your impact matters. 🌟");
+        document.getElementById('impactInput').value = '';
+        closeImpactModal();
+      } else {
+        alert("Please write something before submitting.");
+      }
+    }
+  </script>
+
+</body>
+</html>
